@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+@import './header';
+
+html {
+    height: 100vh;
+
+    body {
+
+        overflow: hidden;
+        background-image: url('../assets/howard-bouchevereau-Db-tzBhd500-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .container {
+            
+            background-color: rgba(12, 12, 12, 0.123);
+            min-height: 800px;
+            
+            
+
+           .container-texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            height: 700px;
+            gap: 10px;
+            flex-direction: column;
+
+
+       
+            
+
+             h1 {
+               
+                color: $color-primary;
+                font-family: $font-secundaria;
+                font-size: 4.5rem;
+                text-shadow: 8px 10px 80px rgba(255, 247, 247, 0.699);
+                padding: 10px;
+                text-align: center;
+                
+                
+             }
+
+             #button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                background-color: rgb(139, 56, 187);
+                min-width: 140px;
+                min-height: 40px;
+                color: #ffffff;
+                border-radius: 5px;
+                font-family: $font-secundaria;
+                box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.336);
+                
+
+                &:hover {
+                    color: black;
+                    background-color: $color-primary;
+                    transition: 500ms linear;
+                    cursor: pointer;
+                    box-shadow: 6px 9px 20px black;
+
+                    
+                }
+             }
+
+             p {
+                margin-top: 2rem;
+                font-size: 1.5rem;
+                text-align: center;
+                max-width: 600px;
+                font-weight: 400;
+                color: white;
+                font-family: $font-padrao;
+                font-weight: lighter;
+             }
+           }
+
+
+        }
+        
+    
+    }
+}
+
